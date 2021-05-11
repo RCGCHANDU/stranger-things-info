@@ -1,0 +1,41 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: transparent;
+  color: white;
+}
+html, body {
+  overscroll-behavior: none;
+}
+/* All Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: red;
+}
+/* body */
+body {
+  margin: 0 12.5rem 0;
+  background-image: url(../imgs/stranger-things-wallpapers.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+/* sidebar */
+aside {
+  float: right;
+}
+ul {
+    padding: 0;
+}
+li, a {
+    padding: 0.05rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+li > a:hover {
+    color: red;
+}]
