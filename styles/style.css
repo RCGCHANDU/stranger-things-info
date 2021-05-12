@@ -8,7 +8,7 @@ body {
   overscroll-behavior: none;
 }
 body {
-  margin: 13.25rem 12.5rem 0;
+  margin: 0 20rem 0;
   background-image: url(../imgs/title-stranger-things-wallpapers.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -23,31 +23,21 @@ h5,
 h6 {
   color: red;
 }
-/* Header */
-header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
 /* Home Page Pic */
 .stranger-things-pic {
-  margin: 6rem 12.5rem 0;
+  /* margin: 0 12.5rem 0; */
+  width: 100%;
+  height: auto;
 }
 /* unordered list for nav bar */
 ul {
-  background-color: transparent;
   display: flex;
   flex-direction: row;
   padding: 0;
   margin: 0;
 }
 ul li {
-  text-decoration: none;
   list-style-type: none;
-  background-color: red;
-}
-ul li a {
-  text-decoration: none;
 }
 /* nav bar options */
 .nav-option {
@@ -56,9 +46,11 @@ ul li a {
   height: 2.5rem;
   text-align: center;
   padding-top: 1rem;
+  font-weight: 600;
 }
 .nav-option:hover {
   background-color: black;
+  color: red;
 }
 /* tables */
 table {
@@ -76,16 +68,14 @@ td {
 .div-line {
   color: white;
 }
-.extra-piece {
+/* nav-content */
+.nav-content {
+  position: fixed;
+  right: 2rem;
+}
+.nav-content a {
+  text-decoration: none;
+}
+.nav-content a:hover {
   background-color: black;
-  position: absolute;
-  height: 150px;
-  width: 69.95rem;
-}
-.wrapper {
-  display: flex;
-  flex-direction: row;
-}
-.logo {
-  z-index: 100;
 }
