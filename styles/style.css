@@ -3,16 +3,20 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
 }
+html {
+  max-width: 100%;
+}
 html,
 body {
   overscroll-behavior: none;
 }
 body {
-  margin: 0 20rem 0;
+  margin: 0 10% 0;
   background-image: url(../imgs/title-stranger-things-wallpapers.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 }
 /* All Headings */
 h1,
@@ -22,15 +26,18 @@ h4,
 h5,
 h6 {
   color: red;
-}
-/* Home Page Pic */
-.stranger-things-pic {
-  width: 100%;
-  height: auto;
+  text-shadow: 4px 4px 4px rgb(196, 53, 9);
 }
 /* image-wrapper */
 .image-wrapper {
-  box-shadow: 3px 5px 3px 0px #ff0000;
+  display: inline-block;
+  box-shadow: 6px -2px 8px 0px #ff0000;
+  margin: 2rem 22% 1rem;
+  object-fit: cover;
+}
+.stranger-things-pic {
+  max-width: 100%;
+  /* min-width: 400px; */
 }
 /* unordered list for nav bar */
 ul {
@@ -41,11 +48,11 @@ ul {
 }
 ul li {
   list-style-type: none;
+  width: 100%;
 }
 /* nav bar options */
 .nav-option {
   background-color: red;
-  width: 10rem;
   height: 2.5rem;
   text-align: center;
   padding-top: 1rem;
@@ -57,15 +64,35 @@ ul li {
 }
 /* tables */
 table {
+  table-layout: fixed;
+  width: 100%;
   border-collapse: collapse;
 }
+th:nth-child(1) {
+  width: 5%;
+}
+th:nth-child(2) {
+  width: 35%;
+}
+th:nth-child(3) {
+  width: 22.5%;
+}
+th:nth-child(4) {
+  width: 22.5%;
+}
+th:nth-child(5) {
+  width: 15%;
+}
+
 th {
   color: red;
   border-bottom: 1px white solid;
 }
 th,
 td {
-  padding: 10px;
+  padding: 7.5px;
+  letter-spacing: 1px;
+  text-shadow: 4px 4px 4px red;
 }
 /* div-line */
 .div-line {
@@ -73,12 +100,55 @@ td {
 }
 /* nav-content */
 .nav-content {
-  position: fixed;
-  right: 2rem;
+  position: sticky;
+  top: 0vw;
+  width: 90%;
+  margin: 0 5% 0;
 }
 .nav-content a {
   text-decoration: none;
 }
 .nav-content a:hover {
   background-color: black;
+}
+p {
+  text-shadow: 4px 4px 4px red;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+/* media queries */
+@media screen and (max-width: 992px) {
+  .image-wrapper {
+    margin: 2rem 18% 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .image-wrapper {
+    margin: 2rem 0 1rem;
+    width: 100%
+  }
+}
+@media screen and (max-width: 576px) {
+  .image-wrapper {
+    margin: 2rem 0 1rem;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 498px) {
+  body {
+    margin: 0;
+  }
+  .nav-content {
+    width: 100%;
+    margin: 0;
+  }
+  image-wrapper {
+    width: 100%;
+  }
+  * {
+    font-size: small;
+  }
 }
