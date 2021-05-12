@@ -28,12 +28,12 @@ body {
   background-position: center;
 }
 /* sidebar */
-aside {
+.sidebar {
   float: right;
   box-sizing: border-box;
-  width: 32%;
-  margin: 0 4%;
-  padding: 0 4%;
+  width: 40%;
+  margin: 0 5%;
+  padding: 0 5%;
   font-size: larger;
 }
 ul {
@@ -50,4 +50,71 @@ li > a:hover {
   font-weight: 500;
   font-size: large;
   text-shadow: 4px 4px 4px rgb(196, 53, 9);
+}
+.video-player {
+  box-sizing: border-box;
+  width: 50%;
+  height: 25rem;
+}
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    float: none;
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+  }
+  .video-player {
+    margin: 0 20%;
+    width: 65%;
+    max-width: 100%;
+  }
+  .theme-music {
+    float: right;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .video-player {
+    margin: 0 15%;
+    width: 70%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video-player {
+    margin: 0 10%;
+    width: 80%;
+    max-width: 100%;
+  }
+  .theme-music {
+    float: right;
+    width: 50%;
+  }
+  .spotify-thumbnail {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .video-player {
+    margin: 0 5%;
+    width: 90%;
+    max-width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .theme-music {
+    float: right;
+    width: 100%;
+  }
+  .spotify-thumbnail {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 498px) {
+  .video-player {
+    width: 100%;
+    margin: 0;
+    height: 20rem;
+  }
 }
