@@ -28,6 +28,10 @@ h6 {
   width: 100%;
   height: auto;
 }
+/* image-wrapper */
+.image-wrapper {
+  box-shadow: 3px 5px 3px 0px #ff0000;
+}
 /* unordered list for nav bar */
 ul {
   display: flex;
