@@ -128,7 +128,7 @@ p {
 @media screen and (max-width: 768px) {
   .image-wrapper {
     margin: 2rem 0 1rem;
-    width: 100%
+    width: 100%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -150,5 +150,20 @@ p {
   }
   * {
     font-size: small;
+  }
+}
+
+/* animations */
+.image-wrapper,
+.logo,
+.nav-content {
+  animation: coming 0.7s ease-in-out;
+}
+@keyframes coming {
+  from {
+    transform: translate(-15px);
+  }
+  to {
+    transform: translate(0%);
   }
 }
