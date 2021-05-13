@@ -37,7 +37,6 @@ h6 {
 }
 .stranger-things-pic {
   max-width: 100%;
-  /* min-width: 400px; */
 }
 /* unordered list for nav bar */
 ul {
@@ -157,13 +156,15 @@ p {
 .image-wrapper,
 .logo,
 .nav-content {
-  animation: coming 0.7s ease-in-out;
+  animation: coming 1.2s ease-in-out;
 }
 @keyframes coming {
   from {
-    transform: translate(-15px);
+    transform: translate(-20px);
+    opacity: 0.2;
   }
   to {
     transform: translate(0%);
+    opacity: 1;
   }
 }

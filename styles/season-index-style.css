@@ -46,7 +46,7 @@ li > a:hover {
   box-sizing: border-box;
   width: 50%;
   height: 25rem;
-  animation: coming-down 0.7s ease-in 0.5s;
+  animation: coming-down 1.2s ease-in;
 }
 /* sidebar */
 .sidebar {
@@ -58,23 +58,27 @@ li > a:hover {
   font-size: larger;
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
     1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-  animation: going-right 0.7s ease-in;
+  animation: going-right 0.8s ease-in;
 }
 /* animations */
 @keyframes coming-down {
   from {
     transform: translateY(-15px);
+    opacity: 0;
   }
   to {
     transform: translateY(0%);
+    opacity: 1;
   }
 }
 @keyframes going-right {
   from {
     transform: translateX(-25px);
+    opacity: 0.33;
   }
   to {
     transform: translateX(0%);
+    opacity: 1;
   }
 }
 /* media queries */
