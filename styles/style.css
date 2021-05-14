@@ -30,7 +30,8 @@ h4,
 h5,
 h6 {
   color: red;
-  text-shadow: 4px 4px 4px rgb(196, 53, 9);
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 /* image-wrapper */
 .image-wrapper {
@@ -66,6 +67,21 @@ ul li {
   color: red;
   transition: all 0.8s ease-out;
 }
+/* about-part */
+.about-part {
+  background-color: black;
+  padding: 10%;
+  margin: 5%;
+}
+.about-part:hover {
+  box-shadow: 6px -2px 8px 0px #ff0000;
+  transition: 1.5s;
+}
+.about-part h3 {
+  margin: 0;
+  text-shadow: none;
+  font-size: 26px;
+}
 /* tables */
 table {
   table-layout: fixed;
@@ -91,12 +107,16 @@ th:nth-child(5) {
 th {
   color: red;
   border-bottom: 1px white solid;
+  padding: 7.5px;
+  letter-spacing: 1px;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
-th,
 td {
   padding: 7.5px;
   letter-spacing: 1px;
   text-shadow: 4px 4px 4px red;
+  overflow-wrap: break-word;
 }
 /* div-line */
 .div-line {
@@ -147,10 +167,12 @@ p {
     visibility: hidden;
   }
   body {
-    background-image: url(../imgs/title-stranger-things-wallpapers.png);
+    background-image: linear-gradient(to bottom, black, black),
+      url(../imgs/title-stranger-things-wallpapers.png);
+    background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
   }
 }
@@ -159,11 +181,22 @@ p {
     margin: 2rem 0 1rem;
     width: 100%;
   }
+  .about-part {
+    margin: 5% 0;
+  }
 }
 @media screen and (max-width: 576px) {
   .image-wrapper {
     margin: 2rem 0 1rem;
     max-width: 100%;
+  }
+  .about-part {
+    padding: 2% 10%;
+  }
+  .about-part:hover {
+    box-shadow: 6px -2px 8px 0px #ff0000;
+    padding: 10%;
+    transition: 1.5s;
   }
 }
 @media screen and (max-width: 498px) {
